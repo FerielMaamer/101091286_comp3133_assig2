@@ -12,6 +12,7 @@ import { SignupComponent } from './Authentication/signup/signup.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     ViewComponent,
     DeleteComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    EmployeesListComponent
   ],
   imports: [
     BrowserModule,

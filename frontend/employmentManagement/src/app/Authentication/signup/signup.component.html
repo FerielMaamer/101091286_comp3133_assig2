@@ -2,3 +2,6 @@
 <input [(ngModel)]="email" placeholder="Email" type="email">
 <input [(ngModel)]="password" placeholder="Password" type="password">
 <button (click)="onSignup()">Signup</button>
+<div *ngIf="error">
+      <p>{{error}}</p>
+</div>
