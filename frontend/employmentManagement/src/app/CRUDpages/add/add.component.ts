@@ -22,7 +22,7 @@ export class AddComponent {
     this.crudService.addEmployee(this.first_name, this.last_name,
       this.email, this.gender, this.salary).subscribe(result => {
       console.log(result);
-      if(result){
+      if(result.data){
         this.router.navigate(['/']);
       }
     });
