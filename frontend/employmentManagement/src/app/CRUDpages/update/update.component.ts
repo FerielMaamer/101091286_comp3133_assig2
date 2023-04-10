@@ -46,7 +46,6 @@ export class UpdateComponent {
   onUpdate() {
     this.crudService.updateEmployee(this._id,this.first_name, this.last_name,
       this.email, this.gender, this.salary).subscribe(result => {
-      console.log(result)
       this.router.navigate(['/']);
     });
   }

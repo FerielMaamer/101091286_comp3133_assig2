@@ -23,8 +23,7 @@ export class DeleteComponent {
     this.router.navigate(['/']);
   }
   onDelete() {
-    this.crudService.deleteEmployee(this._id).subscribe(result => {
-      console.log(result);
+    this.crudService.deleteEmployee(this._id).subscribe(result => {      
       this.router.navigate(['/']);
     });
   }
